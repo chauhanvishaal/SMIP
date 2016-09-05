@@ -1,0 +1,31 @@
+
+<h2>Statistics Monitor</h2>
+<div class="container-fluid">
+
+    <div clas="row">
+        <div class="col-md-2">
+            Search: <input ng-model="$ctrl.query" placeholder="Counter name" />
+        </div>
+
+       <div class="col-md-5">
+
+           <table>
+
+               <tr>
+                    <th>Counter</th>
+                    <th>Value</th>
+               </tr>
+
+               <tr ng-repeat="stat in $ctrl.stats | filter:$ctrl.query">
+                   <td>{{stat.name}}</td>
+                   <td>{{stat.value}}</td>
+               </tr>
+           </table>
+       </div>
+
+    </div>
+    <!--Couldnt get the Ui-grid to work..frustrated... -->
+    <!--<div ng-controller="StatsListController">-->
+        <!--<div ui-grid="gridOptions" class="statsGrid"></div>-->
+    <!--</div>-->
+</div>

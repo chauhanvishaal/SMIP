@@ -1,0 +1,27 @@
+{
+	"snmpEndpoint":
+	{
+		"host": "54.154.130.187",
+		"port": "161",
+		"publicString": "public",
+		"version" : "snmp.Version2c"
+	},
+	"oids": {
+		"OneMinAverageLoad": 	"1.3.6.1.4.1.2021.10.1.3.1",
+		"FiveMinAverageLoad":	"1.3.6.1.4.1.2021.10.1.3.2",
+		"FifteenMinAverageLoad":"1.3.6.1.4.1.2021.10.1.3.3",
+		"TotalRAM": "1.3.6.1.4.1.2021.4.5.0",
+		"TotalRAMUsed":"1.3.6.1.4.1.2021.4.6.0",
+		"TotalRAMFree":"1.3.6.1.4.1.2021.4.11.0",
+		"TotalRAMShared": "1.3.6.1.4.1.2021.4.13.0",
+		"PercentUserCpuTime":"1.3.6.1.4.1.2021.11.9.0",
+		"RawUserCpuTime": "1.3.6.1.4.1.2021.11.50.0"
+	},
+	
+	"oidKeys": [
+		["OneMinAverageLoad", "1.3.6.1.4.1.2021.10.1.3.1"],
+		["FiveMinAverageLoad", "1.3.6.1.4.1.2021.10.1.3.2"],
+		["FifteenMinAverageLoad", "1.3.6.1.4.1.2021.10.1.3.3"]
+	]
+}
+
